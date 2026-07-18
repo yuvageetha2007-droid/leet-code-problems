@@ -4,7 +4,8 @@
  * @return {boolean}
  */
 var checkIfInstanceOf = function(obj, classFunction) {
-    if (obj === null || obj === undefined) {
+
+    if (obj == null || classFunction == null || typeof classFunction !== "function") {
         return false;
     }
 
